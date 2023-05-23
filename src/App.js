@@ -29,15 +29,15 @@ function App() {
               <Route path="/sobre">
                 <Sobre />
               </Route>
-              <Route exact path="/aulas/:id">
+              <PrivateRoute exact path="/aulas/:id">
                 <Aula></Aula>
-              </Route>
+              </PrivateRoute>
               <PrivateRoute path="/aulas">
                 <Aulas />
               </PrivateRoute>
-              <Route path="/assistir">
+              {/* <Route path="/assistir">
                 <Assistir />
-              </Route>
+              </Route> */}
               <Route path="/negado">
                 <AcessoNegado/>
               </Route>
